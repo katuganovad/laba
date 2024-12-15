@@ -8,4 +8,4 @@ FROM mcr.microsoft.com/dotnet/runtime:8.0
 WORKDIR /App
 COPY --from=build-env /App/out .
 EXPOSE 7777
-ENTRYPOINT ["Setochki", "net-project.dll"]
+ENTRYPOINT ["dotnet", Setochki.dll"]
